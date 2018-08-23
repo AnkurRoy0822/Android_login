@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fox"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context="com.example.jhumpi.loginpage.MainActivity">
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+
+        android:text="USERNAME"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etxtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUser"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:hint="Example@gmail.com"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtpswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etxtUser"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="PASSWORD"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etxtpswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpswrd"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:textColor="@color/offwhite" />
+
+    <CheckBox
+        android:id="@+id/chkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etxtpswrd"
+        android:layout_marginTop="10dp"
+        android:text="Remember password"
+        android:textColor="@color/offwhite" />
+
+    <Button
+        android:id="@+id/btnlgn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkBox"
+        android:layout_margin="32dp"
+        android:background="@drawable/loginbutton"
+        android:text="Login"
+        android:textColor="#FFF"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
